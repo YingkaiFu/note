@@ -3,7 +3,7 @@
 ## Disk type verification
 If your disk type is GPT, we remomend you to use UEFI model to install Ubuntu.
 ## Time different
-If you install ubunut along with Windows, you have to change your time to avoid two system have different time.
+If you install ubunut along with Windows, you have to change your time to avoid two systems have different time.
 
 ``` shell
 sudo apt-get install ntpdate
@@ -12,7 +12,7 @@ sudo hwclock --localtime --systohc
 ```
 
 ## Change PIP package source
-The official pip source is always stay up tp date, however, it may be slow to download packages from this server, so for some case, change to Tsinghua server to help to download packges quickly.
+The official pip source is always stay up tp date, however, it may be slow to download packages from this server, so for some cases, change to Tsinghua server to help to download packges quickly.
 ```
 pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
@@ -36,7 +36,7 @@ Restart system and after system start up, type the following commands in the fol
 sudo chmod +x Driver.run
 sudo ./Driver.run --no-x-check --no-nouveau-check --no-opengl-files
 ```
-Type yes for all the options, after installation, use the following command to check GPU status.
+Type yes for all the options, after installation, use the following commands to check GPU status.
 ```
 nvidia-smi
 ```
