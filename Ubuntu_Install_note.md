@@ -28,6 +28,8 @@ Steps:
 Move and backpack the original open source drivers, since it will not allow other drivers to be installed
 ```
 sudo mv /lib/modules/$(uname -r)/kernel/drivers/gpu/drm/nouveau/nouveau.ko /lib/modules/$(uname -r)/kernel/drivers/gpu/drm/nouveau/nouveau.ko.org
+
+sudo update-initramfs -u
 ```
 Restart system and after system start up, type the following commands in the fold where you download you driver. We use Driver.run to represent the driver.
 ```
