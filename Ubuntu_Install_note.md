@@ -2,6 +2,15 @@
 
 ## Disk type verification
 If your disk type is GPT, we remomend you to use UEFI model to install Ubuntu.
+
+## Create disk partitions
+I recommend to mount partitions according to the following strategy.
+* 30%: /
+* 10%: Swap space
+* 60%: /home
+
+NO OTHER PARTITIONS NEEDED!
+
 ## Time different
 If you install ubunut along with Windows, you have to change your time to avoid two systems have different time.
 
