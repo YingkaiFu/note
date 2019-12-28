@@ -99,3 +99,21 @@ $ systemctl --user enable onedrive
 $ systemctl --user start onedrive
 ```
 All files will sync in ~/Onedrive after you have done.
+
+
+## Install OpenCV
+Precondition:
+```
+sudo apt-get install pkg-config 
+```
+command:
+``` bash
+cd opencv
+mkdir build && cd build
+cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D CMAKE_BUILD_TYPE=Release -DENABLE_PRECOMPILED_HEADERS=OFF ..
+make -j all
+```
+
+IPPICV:
+https://github.com/opencv/opencv_3rdparty/tree/ippicv/master_20170822/ippicv
+
