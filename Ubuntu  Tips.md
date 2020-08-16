@@ -4,17 +4,20 @@
 
 ## 1. Disk type verification
 
-If your disk type is GPT, we remomend you to use UEFI model to install Ubuntu.
+If your disk type is GPT, we remomend you to use UEFI mode to install Ubuntu.
 
 ## 2. Create disk partitions
 
-I recommend to mount partitions according to the following strategy. * 30%: / * 10%: Swap space * 60%: /home
+I recommend to creat partitions according to the following strategy. 
+* 30%: / 
+* 10%: Swap space 
+* 60%: /home
 
 **NO OTHER PARTITIONS NEEDED! These partitions are enough!**
 
 ## 3. Correct time discrepancy
 
-If you install ubunut along with Windows, you have to change your time to avoid both systems have different time.
+If you install ubuntu along with Windows, you have to correct your time to avoid both systems have different time.
 
 ```bash
 sudo apt-get install ntpdate
@@ -24,12 +27,12 @@ sudo hwclock --localtime --systohc
 
 # 👥Change PIP package source
 
-The official pip source is always stay up tp date, however, it may be slow to download packages from this server, so for some cases, change to Tsinghua server to help to download packges quickly.
+The official pip source is always stay up to date, however, it may be slow to download packages from this server in some countries, so for some cases, change to Tsinghua server or aliyun server can help to download packges faster.
 
 ```bash
 pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple # Tsinghua source
 # or Aliyun source
-pip install scrapy -i http://mirrors.aliyun.com/pypi/simple/
+pip install scrapy -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
 If you want to change the pip source permanently, you can edit ~/.pip/pip.conf and add the following text to this file:
